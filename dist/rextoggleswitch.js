@@ -1756,9 +1756,10 @@
     }
   };
 
-  var SceneClass = Phaser.Scene;
-  var IsSceneObject = function IsSceneObject(object) {
-    return object instanceof SceneClass;
+  var IsSceneObject = function IsSceneObject(obj) {
+    // return (object instanceof SceneClass);
+    // compatible with vite production builds
+    return obj && _typeof(obj) === "object" && obj.hasOwnProperty("scene") && obj.scene !== undefined && obj.hasOwnProperty("sys") && obj.sys !== undefined;
   };
 
   var GetSceneObject = function GetSceneObject(object) {
