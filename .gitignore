@@ -1,0 +1,4 @@
+/node_modules/*
+/watch-dist/*
+/index.html
+docs/build.bat
