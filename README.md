@@ -1,4 +1,4 @@
 ## ToggleSwitch from Phaser3 Rex Plugins
-Removed the use of instaceof so this works with modern JS production builds.
+Removed the use of instaceof so this works with vite production builds.
 
-npm login --scope=@rmartone --registry=https://registry.npmjs.org/
+This was mainly done for my personal use but I thought I'd share it in case anyone else needs it.
